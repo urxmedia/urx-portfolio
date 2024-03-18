@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Utsav Roy - Backend Developer Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/4a25f8865a.js" crossorigin="anonymous"></script>
+  <!-- Typed JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Utsav's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work-experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, myself Utsav Roy</h2>
+                <p class="hero_desc">I am a <span id="backend-developer-hero-animation"></span></p>
+                <br/>
+                <button type="button" class="btn btn-success mt-3" id="download-cv-button">Download CV</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center about-heading">About Me (Work Experience Summary)</h1>
+            <br/>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/profilePic.jpg" class= "imageAbout" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p class="about-text">
+                        With over <span class="about-bold-text">8 years of professional experience</span>, I've spent over <span class="about-bold-text">3 years</span> specializing in <span class="about-bold-text">HP Exstream</span> at <span class="about-bold-text">HCL Technologies</span>, followed by <span class="about-bold-text">5 years</span> as a <span class="about-bold-text">Golang Developer</span> at <span class="about-bold-text">Infosys</span>.
+                        <br/><br/>
+                        During my tenure as a Developer of <span class="about-bold-text">Backend Virtualized Network Services</span>, I utilized <span class="about-bold-text">Golang</span> as the <span class="about-bold-text">primary programming language</span> for development.
+                        <br/><br/>
+                        Throughout my career, I have adhered to coding standards while developing applications. Each new feature implemented in the respective module underwent thorough unit testing, as did any updated features.
+                        <br/><br/>
+                        I possess a strong working knowledge of <span class="about-bold-text">Go, Docker, Kubernetes, Helm, Bash scripting, </span>and <span class="about-bold-text"> Linux</span>
+                        <br/><br/>
+                        Moreover, I have experience in automating services and processes using shell scripting.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <br/>
+    <br/>
+
+    <!-- skills section-->
+    <section id="skills">
+        <div class="container">
+            <h1 class="text-center">Technical Skills Summary</h1>
+            <br/>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-industry mt-3"></i>
+                            <h4 class="card-title mt-3">Domain</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Software-Defined Networking (SDN)</span>
+                                <span class="card-text-tag">Insurance</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-code mt-3"></i>
+                            <h4 class="card-title mt-3">Programming/Scripting Languages</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Golang</span>
+                                <span class="card-text-tag">Bash</span>
+                                <span class="card-text-tag">Echo Web Framework (Go)</span>
+                                <span class="card-text-tag">gRPC</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-bugs mt-1"></i>
+                            <h4 class="card-title mt-3">Ticket Management</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">JIRA</span>
+                                <span class="card-text-tag">Rally</span>
+                                <span class="card-text-tag">HP Application Lifecycle Management (ALM)</span>
+                                <span class="card-text-tag">Service Now</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-key mt-3"></i>
+                            <h4 class="card-title mt-3">Credentials Management</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Hashicorp Vault</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-brands fa-docker mt-1"></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Docker</span>
+                                <span class="card-text-tag">Rancher</span>
+                                <span class="card-text-tag">Kubernetes</span>
+                                <span class="card-text-tag">Jenkins</span>
+                                <span class="card-text-tag">Concourse</span>
+                                <span class="card-text-tag">Helm</span>
+                                <span class="card-text-tag">Nexus Repository</span>
+                                <span class="card-text-tag">Artifactory</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-brands fa-github mt-3"></i>
+                            <h4 class="card-title mt-3">Versioning System</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Git</span>
+                                <span class="card-text-tag">GitHub</span>
+                                <span class="card-text-tag">BitBucket</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-database mt-1"></i>
+                            <h4 class="card-title mt-3">Database/Storage Management</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">MySQL Server</span>
+                                <span class="card-text-tag">Couchbase</span>
+                                <span class="card-text-tag">ElasticSearch</span>
+                                <span class="card-text-tag">Apache Kafka</span>
+                                <span class="card-text-tag">Etcd</span>
+                                <span class="card-text-tag">Hazelcast IMDG</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-clock mt-1"></i>
+                            <h4 class="card-title mt-3">Monitoring System</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Prometheus</span>
+                                <span class="card-text-tag">Grafana</span>
+                                <span class="card-text-tag">Netdata</span>
+                                <span class="card-text-tag">Node Exporter</span>
+                                <span class="card-text-tag">Splunk</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-solid fa-laptop-code mt-3"></i>
+                            <h4 class="card-title mt-3">Code Editors</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Vim</span>
+                                <span class="card-text-tag">Eclipse</span>
+                                <span class="card-text-tag">Microsoft Visual Studio Code</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card skillsText">
+                        <div class="card-body">
+                            <i class="fas skillsIcon fa-brands fa-ubuntu mt-3"></i>
+                            <h4 class="card-title mt-3">Operating Systems</h4>
+                            <p class="card-text mt-3">
+                                <span class="card-text-tag">Windows</span>
+                                <span class="card-text-tag">Linux</span>
+                                <span class="card-text-tag">Mac</span>
+                            </p>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <br/>
+    <br/>
+
+    <!-- work experience -->
+    <section id="work-experience">
+        <div class="container mt-3">
+            <h1 class="text-center">Work Experience</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Rubicon</h4>
+                            <p class="card-text">
+                               <table class="project-info-table">
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Project Title</td>
+                                  <td>Rubicon</td>
+                                </tr>
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Client</td>
+                                  <td>Comcast Corporation</td>
+                                </tr>
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Role</td>
+                                  <td>Go Backend Developer</td>
+                                </tr>
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Employer</td>
+                                  <td>Infosys Limited</td>
+                                </tr>
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Designation</td>
+                                  <td>Technology Lead</td>
+                                </tr>
+                                <tr>
+                                  <td class="work-experience-bold-text project-info-table-cell-width">Work Duration</td>
+                                  <td>March 2023 - December 2023</td>
+                                </tr>
+                              </table>
+                            </p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success mt-3 project-summary-button" id="rubicon-project-summary">Project Summary</button>
+                                <button type="button" class="btn btn-success mt-3 key-responsibilities-button" id="rubicon-key-responsibilities">Key Responsibilities</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Mavenir Telecom Cloud Integration Layer (MTCIL)</h4>
+                            <p class="card-text">
+                                <table class="project-info-table">
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Project Title</td>
+                                      <td>MTCIL</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Client</td>
+                                      <td>Mavenir</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Role</td>
+                                      <td>Go Backend Developer</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Employer</td>
+                                      <td>Infosys Limited</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Designation</td>
+                                      <td>Technology Analyst</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Work Duration</td>
+                                      <td>July 2020 - February 2023</td>
+                                    </tr>
+                                  </table>
+                            </p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success mt-3 project-summary-button" id="mtcil-project-summary">Project Summary</button>
+                                <button type="button" class="btn btn-success mt-3 key-responsibilities-button" id="mtcil-key-responsibilities">Key Responsibilities</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Business Continuity Platform (BCP)</h4>
+                            <p class="card-text">
+                                <table class="project-info-table">
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Project Title</td>
+                                      <td>BCP</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Client</td>
+                                      <td>Comcast Corporation</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Role</td>
+                                      <td>Go Backend Developer</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Employer</td>
+                                      <td>Infosys Limited</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Designation</td>
+                                      <td>Senior Systems Engineer</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Work Duration</td>
+                                      <td>April 2018 - June 2020</td>
+                                    </tr>
+                                  </table>
+                            </p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success mt-3 project-summary-button" id="bcp-project-summary">Project Summary</button>
+                                <button type="button" class="btn btn-success mt-3 key-responsibilities-button" id="bcp-key-responsibilities">Key Responsibilities</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Content Publishing (CP)</h4>
+                            <p class="card-text">
+                                <table class="project-info-table">
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Project Title</td>
+                                      <td>Content Publishing</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Client</td>
+                                      <td>Great American Insurance Corporation (GAIC)</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Role</td>
+                                      <td>Exstream Developer</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Employer</td>
+                                      <td>HCL Technologies Limited</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Designation</td>
+                                      <td>Software Engineer</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="work-experience-bold-text project-info-table-cell-width">Work Duration</td>
+                                      <td>May 2015 - March 2018</td>
+                                    </tr>
+                                  </table>
+                            </p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success mt-3 project-summary-button" id="cp-project-summary">Project Summary</button>
+                                <button type="button" class="btn btn-success mt-3 key-responsibilities-button" id="cp-key-responsibilities">Key Responsibilities</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+    </section>
+
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <div class="popup-title" id="popup-title">Popup Header Text</div>
+            <button class="popup-close-button" id="popup-close-button">&times;</button>
+        </div>
+        <div class="popup-body" id="popup-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi qui deleniti quia eos, totam eligendi porro in distinctio quaerat consequatur atque iste officiis, quidem enim nisi sed! Recusandae aperiam numquam neque delectus minima accusamus rem autem amet accusantium cum dolorum sapiente corrupti fuga, facilis adipisci maxime mollitia fugit. Deleniti quas voluptate hic at harum doloremque ipsam! Libero, esse natus aspernatur eligendi minima pariatur, amet mollitia tempora omnis, nostrum ex cumque? Quidem distinctio modi porro sapiente soluta, eveniet libero? Neque culpa magni aliquam, optio laboriosam quaerat veniam nemo a, et commodi tempore enim deleniti maiores architecto nam esse aperiam accusantium?
+        </div>
+    </div>
+    <div class="contact-form-alert" id="contact-form-alert">
+        <div class="alert-icon fa-solid fa-circle-check"></div>
+        <div class="alert-message" id="alert-message">Thank You! Your contact form has been successfully submitted.</div>
+        <div class="ok-button">
+            <button class="alert-ok-button" id="alert-ok-button">OK</button>
+        </div>
+    </div>
+    <div id="popup-overlay"></div>
+
+    <br/>
+    <br/>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio (Personal Projects)</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">YouTube Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Quiz App</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title project-name">Product Landing Page</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+    </section>
+
+    <br/>
+    <br/>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+            <br/>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;">
+                        <div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Narayana+Reddy+Layout,+Konappana+Agrahara,+Electronic+City,+Bengaluru,+Karnataka,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                        <a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="grab-map-data">premium bootstrap themes</a><style>#gmap-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="contactForm">
+                    <!-- form fields -->
+                    <form id="contact-me-submit-form">
+                        <div class="phone-number">
+                            <div class="phone-icon fa-solid fa-phone"></div>
+                            <div class="number">09740726810</div>
+                        </div>
+                        <input type="text" class="form-control form-control-lg" id="contactFormNameBox" placeholder="Name" name="name" required>
+                        <input type="email" class="form-control mt-3" id="contactFormEmailBox" placeholder="Email" name="email" required>
+                        <input type="text" class="form-control mt-3" id="contactFormSubjectBox" placeholder="Subject" name="subject" required>
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success mt-3" id="contact-me-button">Contact Me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://linkedin.com/in/utsavroy1992" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

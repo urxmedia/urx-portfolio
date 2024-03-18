@@ -1,0 +1,317 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/heroImage.jpeg");
+  background-size: cover;
+  position: relative;
+}
+
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+}
+
+.hero_desc {
+  font-size: 2rem;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* spacing on all sections */
+/* #about, #skills, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+
+#contact {
+  padding-bottom: 4rem;
+}
+
+/* about section image css */
+.imageAbout {
+  width: 50%;
+  margin-left: 100px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+/* services section css */
+.skillsText.card {
+  height: 200px;
+  cursor: pointer;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.skillsIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  color: #008000;
+}
+
+.card-title {
+  text-align: center;
+  color: white;
+}
+
+.card:hover .skillsIcon {
+  color: #008000;
+}
+
+.skillsText:hover {
+  border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+  color: #008000;
+}
+
+.fab {
+  color: #000000;
+}
+
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
+
+#backend-developer-hero-animation {
+  color: yellow;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#download-cv-button {
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+.about-bold-text {
+  font-weight: bold;
+}
+
+.about-text {
+  margin-top: 15px;
+}
+
+.fa-ticket {
+  color: black;
+}
+
+.card-text {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  flex-wrap: wrap; /* Allow tags to wrap if they exceed the width */
+}
+
+.card-text-tag {
+  display: inline-block; /* Display tags inline with block layout */
+  margin-right: 5px; /* Add spacing between tags */
+  margin-bottom: 5px; /* Add vertical spacing */
+  padding: 5px 10px; /* Add padding for better appearance */
+  background-color: #008000; /* Add background color */
+  color: white;
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 80%;
+  text-align: center;
+}
+
+.project-name {
+  color: black;
+}
+
+.work-experience-bold-text {
+  font-weight: bold;
+}
+
+.project-info-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-info-table-cell-width {
+  width: 180px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 100;
+  background-color: white;
+  width: 700px;
+  max-width: 80%;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.popup-header .popup-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-header .popup-close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.popup-body {
+  padding: 10px 15px;
+}
+
+#popup-overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#popup-overlay.active {
+  opacity: 0.8;
+  pointer-events: all;
+}
+
+#contactForm {
+  background-color: black;
+  padding-top: 25px;
+  height: 490px;
+  border-radius: 10px;
+}
+
+#contact-me-button {
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 250px;
+}
+
+#contactFormNameBox,
+#contactFormEmailBox,
+#contactFormSubjectBox,
+#comment {
+  width: 90%;
+  margin-left: 30px;
+}
+
+.alert-icon {
+  color: green;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.alert-message {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 100;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-alert.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.alert-ok-button {
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #008000;
+  border-radius: 10px;
+  padding: 7px 30px 7px 30px;
+}
+
+.alert-ok-button:hover {
+  background-color: darkgreen;
+}
+
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phone-number .phone-icon {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.phone-number .number {
+  color: white;
+  font-size: 1.5rem;
+}
